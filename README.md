@@ -18,6 +18,7 @@ First, clone the repository to your local machine:
 ```bash
 git clone https://github.com/your-username/MockServer1.git
 cd MockServer1
+bash'''
 
 Import the Project into Eclipse
 Open Eclipse.
@@ -27,3 +28,15 @@ Select Maven > Existing Maven Projects.
 Click Next.
 Browse to the directory where you cloned the project.
 Select the project and click Finish.
+
+##Set Up and Install Dependencies
+Build the project:
+
+Right-click on the project in the Project Explorer.
+Select Run As > Maven build....
+In the Goals field, enter clean package.
+Click Run.
+Run the application locally:
+
+Right-click on the project in the Project Explorer.
+Select Run As > Spring Boot App.
