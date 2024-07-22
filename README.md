@@ -40,3 +40,23 @@ Run the application locally:
 
 Right-click on the project in the Project Explorer.
 Select Run As > Spring Boot App.
+
+# MySQL Database Configuration
+spring.datasource.url=jdbc:mysql://localhost:3306/your-database-name
+spring.datasource.username=your-username
+spring.datasource.password=your-password
+spring.jpa.database-platform=org.hibernate.dialect.MySQLDialect
+spring.jpa.hibernate.ddl-auto=update
+
+Running Tests
+To run the tests for this project:
+
+Right-click on the project in the Project Explorer.
+Select Run As > Maven test.
+Endpoints
+Students
+GET /students: Get all students.
+GET /students/{usn}: Get a student by USN.
+POST /students: Add a new student.
+PUT /students/{usn}: Update a student's details.
+DELETE /students/{usn}: Delete a student 
